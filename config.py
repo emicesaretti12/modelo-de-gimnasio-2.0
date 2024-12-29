@@ -1,26 +1,35 @@
-COLORS = {
-    'background': '#f0f0f0',
-    'text': '#333333',
-    'button': '#4CAF50',  # Color verde
-    'button_text': '#ffffff',
-    'error': '#f44336',  # Color rojo
-    'button_hover': '#45a049',  # Verde más oscuro al pasar el ratón
-    'tab_bg': '#e0e0e0'  # Color de fondo de las pestañas
-}
+# config.py
+
+# Paleta de colores para la interfaz
+COLORS = { 'background': '#f7f7f7',
+          'menu_bg': '#333',
+          'menu_fg': '#fff',
+          'button_bg': '#4CAF50',
+          'button_fg': '#fff',
+          'title_fg': '#333',
+          'tab_bg': '#e0e0e0' }
+# Título de la aplicación
 
 APP_TITLE = "Gestión de Gimnasio"
-FONTS = {
-    'title': ("Arial", 18, "bold"),
-    'button': ("Arial", 12, "bold"),
-    'text': ("Arial", 10)
-}
+
+# Configuraciones de tamaño de ventanas
 WINDOW_SIZES = {
-    'main': (400, 300),
-    'large': (800, 600)
-}
-MESSAGES = {
-    'success': "Operación realizada con éxito.",
-    'error': "Ha ocurrido un error.",
-    'not_found': "Elemento no encontrado."
+    "main": (800, 600),
+    "login": (400, 300),
+    "client_registration": (600, 500)
 }
 
+# Rutas de archivos importantes
+PATHS = {
+    "database": "gimnasio.db",
+    "logs": "logs/",
+    "backups": "backups/"
+}
+
+# Configuraciones generales de la aplicación
+APP_CONFIG = {
+    "version": "1.0.0",
+    "debug_mode": False,
+    "max_login_attempts": 3,
+    "password_min_length": 8
+}
